@@ -1,0 +1,14 @@
+Proceso SumaDelArreglo
+	Definir array, i, suma como entero
+	Dimension array[5]
+	suma = 0
+	Para i <- 0 hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese un valor para su arreglo:"
+		Leer array[i]
+	FinPara
+	
+	Para i <- 0 hasta 4 Con Paso 1 Hacer
+		suma = suma + array[i]
+	FinPara
+	Escribir  "La suma de los valores es: " suma
+FinAlgoritmo
