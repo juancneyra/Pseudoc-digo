@@ -1,0 +1,29 @@
+Proceso promedio_mayor_yMenor_Arreglo
+	Definir corredores, i,  suma como entero
+	Definir promedio, marcaMenor, marcaMayor Como Real
+	Dimension corredores[5]
+	marcaMayor = 0
+	Para i <- 0 hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese la marca del corredor ", i +1 ,":" 
+		Leer corredores[i]
+		suma = suma + corredores[i]
+	FinPara
+	
+	promedio = suma / 5
+	
+	
+	
+	Para i <- 0 hasta 4 Con Paso 1 Hacer
+		Si corredores[i]> promedio Entonces
+			marcaMayor= marcaMayor+1
+		Sino 
+			marcaMenor = marcaMenor+1
+			
+		FinSi
+		
+	FinPara
+	
+	Escribir "El promedio de marca de los corredores es :" promedio
+	Escribir "La cantidad de corredores por encima del promedio es: " marcaMayor
+	Escribir "La cantidad de corredores por debajo del promedio es: " marcaMenor
+FinAlgoritmo
